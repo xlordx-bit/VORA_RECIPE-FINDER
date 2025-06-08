@@ -1,0 +1,82 @@
+@import '../styles/variables';
+
+.signup {
+  min-height: calc(100vh - 80px);
+  padding-top: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__container {
+    width: 100%;
+    max-width: 400px;
+    padding: $spacing-xl;
+    background: rgba($color-white, 0.03);
+    border: 1px solid rgba($color-primary, 0.2);
+    border-radius: $border-radius-lg;
+    box-shadow: 0 10px 30px rgba($color-black, 0.3);
+  }
+
+  &__title {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: $spacing-xl;
+    background: linear-gradient(to right, $color-primary-light, $color-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: $spacing-lg;
+  }
+
+  &__input {
+    width: 100%;
+    padding: $spacing-md;
+    background: rgba($color-white, 0.05);
+    border: 1px solid rgba($color-primary, 0.2);
+    border-radius: $border-radius-md;
+    color: $color-white;
+    transition: $transition-base;
+
+    &:focus {
+      outline: none;
+      border-color: $color-primary;
+      box-shadow: 0 0 0 2px rgba($color-primary, 0.2);
+    }
+
+    &::placeholder {
+      color: rgba($color-white, 0.3);
+    }
+  }
+
+  &__button {
+    padding: $spacing-md;
+    background: $color-primary;
+    color: $color-white;
+    border: none;
+    border-radius: $border-radius-md;
+    font-weight: 600;
+    cursor: pointer;
+    transition: $transition-base;
+
+    &:hover {
+      background: $color-primary-dark;
+      transform: translateY(-2px);
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px rgba($color-primary, 0.4);
+    }
+  }
+
+  &__error {
+    color: #ff4d4d;
+    text-align: center;
+    margin-top: $spacing-md;
+  }
+}

@@ -1,0 +1,58 @@
+@import './styles/variables';
+
+.app {
+  min-height: 100vh;
+  background: linear-gradient(135deg, $color-secondary, $color-black);
+  color: $color-white;
+}
+
+.loading {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, $color-secondary, $color-black);
+
+  &__spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba($color-primary, 0.1);
+    border-top-color: $color-primary;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.app {
+  min-height: 100vh;
+  background: $color-black;
+  color: $color-white;
+}
+
+.loading {
+  min-height: 100vh;
+  background: linear-gradient(135deg, $color-secondary, $color-black);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &__spinner {
+    width: 48px;
+    height: 48px;
+    border: 4px solid rgba($color-primary, 0.1);
+    border-top-color: $color-primary;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
