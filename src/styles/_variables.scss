@@ -1,0 +1,103 @@
+// Colors - Modern Grey & Brown Theme
+$color-primary: #725B53;      // Warm Grey-Brown
+$color-primary-light: #8C7B74; // Light Taupe
+$color-primary-dark: #4A3B36;  // Deep Grey-Brown
+$color-secondary: #9B8579;     // Soft Taupe
+$color-accent: #C4B0A4;        // Pale Taupe
+$color-white: #FFFFFF;
+$color-cream: #F5F0EC;         // Off-White
+$color-beige: #E8E1DD;         // Light Beige
+$color-warm-gray: #ADA195;     // Warm Grey
+$color-gray: #6B6259;          // Muted Brown-Grey
+$color-gray-light: #F8F6F4;    // Almost White
+$color-gray-dark: #3C332E;     // Deep Grey-Brown
+$color-black: #2C2521;         // Almost Black Brown
+
+// Theme colors
+$bg-light: #F5F0EC;           // Light warm background
+$bg-card: rgba(245, 240, 236, 0.9);
+$bg-overlay: rgba(114, 91, 83, 0.05);
+
+// Typography
+$font-primary: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-secondary: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+$font-size-xs: 0.75rem;    // 12px
+$font-size-sm: 0.875rem;   // 14px
+$font-size-base: 1rem;     // 16px
+$font-size-lg: 1.125rem;   // 18px
+$font-size-xl: 1.25rem;    // 20px
+$font-size-2xl: 1.5rem;    // 24px
+$font-size-3xl: 1.875rem;  // 30px
+$font-size-4xl: 2.25rem;   // 36px
+$line-height-tight: 1.25;
+$line-height-base: 1.5;
+$line-height-loose: 1.75;
+
+// Border radius
+$border-radius-sm: 0.25rem;
+$border-radius-md: 0.5rem;
+$border-radius-lg: 1rem;
+
+// Box shadows
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
+$shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.1);
+
+// Component specific
+$primary-dark: $color-secondary;
+$border-color: $color-gray-light;
+$border-radius: $border-radius-md;
+$box-shadow: $shadow-md;
+$bg-secondary: $color-white;
+$bg-input: $color-white;
+$text-primary: $color-black;
+$primary: $color-primary;
+$success: #27ae60;
+$danger: #e74c3c;
+
+// Spacing
+$spacing-xs: 0.25rem;
+$spacing-sm: 0.5rem;
+$spacing-md: 1rem;
+$spacing-lg: 1.5rem;
+$spacing-xl: 2rem;
+$spacing-2xl: 3rem;
+
+// Breakpoints
+$breakpoint-sm: 640px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+
+// Transitions and Effects
+$transition-base: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-smooth: all 0.4s cubic-bezier(0.65, 0, 0.35, 1);
+$transition-bounce: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+$transition-fast: all 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+$transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Shadows and Effects
+$shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+$shadow-lg: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+$shadow-xl: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+$shadow-inner: inset 0 2px 4px rgba(0, 0, 0, 0.06);
+$shadow-outline: 0 0 0 3px rgba(139, 92, 246, 0.3);
+
+// Glassmorphism
+$glass-bg: rgba(245, 240, 236, 0.8);
+$glass-border: 1px solid rgba($color-warm-gray, 0.2);
+$glass-shadow: 0 8px 32px 0 rgba($color-primary-dark, 0.15);
+$glass-backdrop: blur(8px) saturate(120%);
+
+// Gradient Effects
+$gradient-primary: linear-gradient(135deg, $color-primary 0%, $color-primary-dark 100%);
+$gradient-secondary: linear-gradient(135deg, $color-secondary 0%, $color-warm-gray 100%);
+$gradient-accent: linear-gradient(135deg, $color-accent 0%, $color-beige 100%);
+$gradient-light: linear-gradient(135deg, $color-white 0%, $color-gray-light 100%);
+$gradient-warm: linear-gradient(135deg, $color-beige 0%, $color-warm-gray 100%);
+
+// Z-index
+$z-index-navbar: 1000;
+$z-index-modal: 2000;
+$z-index-tooltip: 3000;
